@@ -1,4 +1,4 @@
-// Package govalidator is package of validators and sanitizers for strings, structs and collections.
+// Package GoValidator is package of validators and sanitizers for strings, structs and collections.
 package govalidator
 
 import (
@@ -36,7 +36,7 @@ const RF3339WithoutZone = "2006-01-02T15:04:05"
 
 // SetFieldsRequiredByDefault causes validation to fail when struct fields
 // do not include validations or are not explicitly marked as exempt (using `valid:"-"` or `valid:"email,optional"`).
-// This struct definition will fail govalidator.ValidateStruct() (and the field values do not matter):
+// This struct definition will fail GoValidator.ValidateStruct() (and the field values do not matter):
 //     type exampleStruct struct {
 //         Name  string ``
 //         Email string `valid:"email"`
