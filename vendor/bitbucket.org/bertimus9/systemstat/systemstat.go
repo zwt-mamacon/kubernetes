@@ -23,7 +23,7 @@ type CPUSample struct {
 	Idle    uint64    // time spent in the idle task
 	Iowait  uint64    // time spent waiting for I/O to complete (since Linux 2.5.41)
 	Irq     uint64    // time spent servicing  interrupts  (since  2.6.0-test4)
-	SoftIrq uint64    // time spent servicing softirqs (since 2.6.0-test4)
+	SoftIrq uint64    // time spent servicing SoftIrq (since 2.6.0-test4)
 	Steal   uint64    // time spent in other OSes when running in a virtualized environment
 	Guest   uint64    // time spent running a virtual CPU for guest operating systems under the control of the Linux kernel.
 	Name    string    // name of the line in /proc/stat; cpu, cpu1, etc
